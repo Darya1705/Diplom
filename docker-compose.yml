@@ -1,28 +1,40 @@
 version: '3.7'
 services:
+
   mysql:
-    image: mysql:8.0.19
-    cap_add:
-      - SYS_NICE  # CAP_SYS_NICE
+    image: mysql:8.0.28
+    container_name: mysql-container
     ports:
       - '3306:3306'
+    volumes:
+      - ./db/data_mysql:/var/lib/mysql
     environment:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
-      - MYSQL_DATABASE=app
-      - MYSQL_USER=app
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=user
       - MYSQL_PASSWORD=pass
 
-  postgres:
-    image: postgres:12.0-alpine
+  postgresql:
+    image: postgres:14.1
+    container_name: postgresql-container
     ports:
       - '5432:5432'
+    volumes:
+      - ./db/data_postgres:/var/lib/postgresql/data
     environment:
-      - POSTGRES_RANDOM_ROOT_PASSWORD=yes
-      - POSTGRES_DB=app
-      - POSTGRES_USER=app
+      - POSTGRES_DB=db
+      - POSTGRES_USER=user
       - POSTGRES_PASSWORD=pass
 
-  nodejs:
-    build: ./gate-simulator
+  node:
+    image: "node"
+    container_name: node
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./gate-simulator:/home/node/app
     ports:
       - '9999:9999'
+    command: "npm start"
