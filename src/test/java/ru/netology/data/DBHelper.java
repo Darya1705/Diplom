@@ -13,7 +13,7 @@ public class DBHelper {
 
     @SneakyThrows
     private static Connection connection() {
-        String url = System.getProperty("db");
+        String url = System.getProperty("db", "jdbc:postgresql://localhost:5432/db");
         String user = "user";
         String password = "pass";
         return DriverManager.getConnection(url, user, password);

@@ -38,7 +38,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    systemProperty 'db', System.getProperty('db')
+    systemProperty 'db', System.getProperty('db', "jdbc:postgresql://localhost:5432/db")
     println "db.url: " + System.getProperty("db")
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
