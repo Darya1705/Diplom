@@ -16,8 +16,8 @@
 
 **Общий итог по времени**
 
-Время на исполнение автоматизированного тестирования соответствует запланированным <96 часам.>
+Время на исполнение автоматизированного тестирования соответствует запланированным 96 часам.
 
-![](C:/Users/Admin/Desktop/Summary.png)
+![Summary](https://user-images.githubusercontent.com/94560819/172021151-e1e70444-8bf8-4136-b09e-644051c14bf9.png)
 
-![](C:/Users/Admin/Desktop/Summary API.png)
+![Summary API](https://user-images.githubusercontent.com/94560819/172021156-b7e2483f-1453-49f8-b555-fe07d3a0e36e.png)

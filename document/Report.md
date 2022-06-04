@@ -38,6 +38,8 @@
 
 + Целесообразно добавить элементам страницы сервиса data-test-* атрибуты для надежности локаторов и упрощения их поиска.
 
-![](C:/Users/Admin/Desktop/Summary.png)
+![Summary](https://user-images.githubusercontent.com/94560819/172021120-8f0918b7-c70e-4947-b19f-94b3ce18418b.png)
 
-![](C:/Users/Admin/Desktop/Summary API.png)
+![Summary API](https://user-images.githubusercontent.com/94560819/172021123-fe7000b4-d75e-4fcd-881d-4dea70759f99.png)
+
+
