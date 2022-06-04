@@ -81,7 +81,7 @@ MySQL
 + Завершить работу контейнеров командой в консоли:
 docker-compose down
 
-[![Build status](https://ci.appveyor.com/api/projects/status/sltu6oncuf5ewjfw?svg=true)](https://ci.appveyor.com/project/Darya1705/diplom)
+[![Build status](https://ci.appveyor.com/api/projects/status/sltu6oncuf5ewjfw/branch/master?svg=true)](https://ci.appveyor.com/project/Darya1705/diplom/branch/master)
 
 [Issues](https://github.com/Darya1705/Diplom/issues)
 
