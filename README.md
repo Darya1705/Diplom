@@ -52,19 +52,18 @@
 2.После развертывания контейнера для запуска SUT в зависимости от выбранной для работы СУБД выполнить команду в консоли:
 
 PostgreSQL
-
-+ java -jar aqa-shop.jar
++ java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar aqa-shop.jar
 
 MySQL
-+ java -jar aqa-shop.jar --spring.datasource.url=jdbc:mysql://localhost:5432/db
++ java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar aqa-shop.jar
 
 3. Запустить тесты командой в консоли:
 
 PostgreSQL
-+ ./gradlew clean test allureServe
++ ./gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/app allureServe
 
 MySQL
-+ ./gradlew clean test allureServe -Ddb=jdbc:mysql://localhost:5432/db
++ ./gradlew clean test -Ddb.url=jdbc:mysql://localhost:3306/app allureServe
 
 **Дополнительные сведения:**
 
