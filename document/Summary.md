@@ -22,4 +22,7 @@
 
 ![Summary API](https://user-images.githubusercontent.com/94560819/172021156-b7e2483f-1453-49f8-b555-fe07d3a0e36e.png)
 
+![Allure общий](https://user-images.githubusercontent.com/94560819/172155546-720fec3f-8ca2-4860-a98e-9c171fe30336.png)
+
+
 [Allure](http://172.23.160.1:65429)
