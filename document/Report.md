@@ -44,7 +44,8 @@
 
 ![Summary API](https://user-images.githubusercontent.com/94560819/172021123-fe7000b4-d75e-4fcd-881d-4dea70759f99.png)
 
-![](C:/Users/Admin/Desktop/Allure общий.png)
+
+
 
 [Allure](http://192.168.0.119:56993)
 

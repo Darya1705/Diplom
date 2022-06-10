@@ -22,7 +22,7 @@
 
 Само приложение расположено в файле *aqa-shop.jar* и запускается на порту 8080.
 
-**Добавляем обработку параметров логина и пароля командами:**
+**Добавляем обработку параметров логина, пароля командами:**
 + systemProperty 'db.user', System.getProperty('db.user', 'app')
 + systemProperty 'db.password', System.getProperty('db.password', 'pass')
 

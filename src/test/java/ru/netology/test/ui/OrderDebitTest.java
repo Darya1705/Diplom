@@ -92,7 +92,7 @@ public class OrderDebitTest {
 
     @Test
     @DisplayName("Должен вернуть ошибку с пустым полем имени в форме оплаты")
-    void shouldReturnErrorWithEmptyNameDebit() {
+    void shouldReturnErorWithEmptyNameDebit() {
         successDebitPage()
                 .enterIncorrectNameInput(emptyNameUser(), "Поле обязательно для заполнения");
     }
