@@ -22,4 +22,4 @@
 
 ![Summary API](https://user-images.githubusercontent.com/94560819/172021156-b7e2483f-1453-49f8-b555-fe07d3a0e36e.png)
 
-[Allure](http://172.23.160.1:65429)
+[Allure](http://192.168.0.119:56993)

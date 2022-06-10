@@ -22,7 +22,11 @@
 
 Само приложение расположено в файле *aqa-shop.jar* и запускается на порту 8080.
 
-В файле *application.properties* приведён ряд типовых настроек:
+**Добавляем обработку параметров логина и пароля командами:**
++ systemProperty 'db.user', System.getProperty('db.user', 'app')
++ systemProperty 'db.password', System.getProperty('db.password', 'pass')
+
++ В файле *application.properties* приведён ряд типовых настроек:
 
 + учётные данные и url для подключения к СУБД
 + url-адреса банковских сервисов
@@ -39,7 +43,7 @@
 
 **Предусловия**
 
-При выполнении курсовой работы необходимо установить: IntelliJ IDEA, Google Chrome.
+При выполнении дипломной работы необходимо установить: IntelliJ IDEA, Google Chrome.
 
 **Установка и запуск**
 
