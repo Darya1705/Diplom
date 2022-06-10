@@ -12,7 +12,7 @@ public class HomePage {
     SelenideElement debitForm = $x(".//span[text()='Купить']");
     SelenideElement creditForm = $x(".//span[text()='Купить в кредит']");
 
-    public void openPage() {
+    public void checkHomePageIsOpened() {
         header.shouldBe(visible).shouldHave(text("Путешествие дня"));
     }
 

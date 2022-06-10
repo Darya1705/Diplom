@@ -31,7 +31,7 @@ public class OrderCreditTest {
     @BeforeEach
     void setUp() {
         open("http://localhost:8080/");
-        new HomePage().openPage();
+        new HomePage().checkHomePageIsOpened();
     }
 
     @AfterEach
