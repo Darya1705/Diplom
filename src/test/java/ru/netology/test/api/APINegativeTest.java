@@ -52,7 +52,7 @@ public class APINegativeTest {
 
     @Test
     @DisplayName("Должен быть статус DECLINED при оплате отклоненной кредитной картой")
-    void shouldHaveStatusWithCreditDeclinedCards() {
+    void shouldHaveStatusWithCreditDeclinedCard() {
         payFromCard(getDeclinedCard(), creditPay, 200);
         assertEquals("DECLINED", DBHelper.getStatusCreditCard());
     }

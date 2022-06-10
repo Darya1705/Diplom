@@ -92,7 +92,7 @@ public class OrderCreditTest {
 
     @Test
     @DisplayName("Должен вернуть ошибку с пустым полем имени в форме кредита")
-    void shouldReturnErorWithEmptyNameCredit() {
+    void shouldReturnErrorWithEmptyNameCredit() {
         successCreditPage()
                 .enterIncorrectNameInput(emptyNameUser(), "Поле обязательно для заполнения");
     }

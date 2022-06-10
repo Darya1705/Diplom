@@ -92,7 +92,7 @@ public class APIPositiveTest {
 
     @Test
     @DisplayName("Должен быть статус APPROVED при оплате одобренной кредитной картой")
-    void shouldHaveStatusWithCreditApprovedCards() {
+    void shouldHaveStatusWithCreditApprovedCard() {
         payFromCard(getApprovedCard(), creditPay, 200);
         assertEquals("APPROVED", DBHelper.getStatusCreditCard());
     }
